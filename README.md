@@ -6,6 +6,40 @@ OneHealth was built as a hackathon MVP addressing a real clinical gap: doctors c
 
 ---
 
+## Screenshots
+
+### Patient iOS App
+
+| Login | Register | Dashboard |
+|-------|----------|-----------|
+| ![Login](screenshots/ios/ios_01_login.jpg) | ![Register](screenshots/ios/ios_02_register.jpg) | ![Dashboard](screenshots/ios/ios_03_dashboard.jpg) |
+
+| Scan Medicine | Safety Check | Add Medicine |
+|---------------|--------------|--------------|
+| ![Scan](screenshots/ios/ios_05_scan_medicine.jpg) | ![Safety Check](screenshots/ios/ios_06_safety_check.jpg) | ![Add Medicine](screenshots/ios/ios_07_add_medicine.jpg) |
+
+| Safety Check Result | Interaction Detail | DDI Warning Banner |
+|---------------------|--------------------|--------------------|
+| ![Safety Result](screenshots/ios/ios_08_safety_check_result.jpg) | ![Interaction Detail](screenshots/ios/ios_09_interaction_detail.jpg) | ![DDI Banner](screenshots/ios/ios_10_dashboard_ddi_banner.jpg) |
+
+| Medicine Detail | AI Assistant | All Taken! |
+|-----------------|--------------|------------|
+| ![Medicine Detail](screenshots/ios/ios_11_medicine_detail.jpg) | ![Chatbot](screenshots/ios/ios_04_chatbot.jpg) | ![Confetti](screenshots/ios/ios_12_dashboard_confetti.jpg) |
+
+---
+
+### Doctor Web App
+
+| Login | Patients & Medicines |
+|-------|----------------------|
+| ![Doctor Login](screenshots/web/web_01_login.jpg) | ![Patients](screenshots/web/web_02_patients_list.jpg) |
+
+| Prescribe + DDI Block | US Equivalent Lookup |
+|-----------------------|----------------------|
+| ![DDI Warning](screenshots/web/web_04_ddi_warning.jpg) | ![US Equivalent](screenshots/web/web_05_us_equivalent.jpg) |
+
+---
+
 ## The Problem
 
 - Immigrants and travelers carry medicines from their home countries with brand names unrecognized in the US (e.g. Panadol, Brufen, Calpol).
