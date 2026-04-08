@@ -18,6 +18,7 @@ class PatientMedicine(Base):
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     patient_id = Column(UUID(as_uuid=True), ForeignKey("patient_profiles.id"), nullable=False)
     medicine_id = Column(UUID(as_uuid=True), ForeignKey("medicines.id"), nullable=False)
+    prescribed_by_id = Column(UUID(as_uuid=True), ForeignKey("users.id"), nullable=True)
     dosage = Column(String)
     frequency = Column(String)               # e.g. "twice daily"
     times_per_day = Column(Integer)
@@ -29,3 +30,4 @@ class PatientMedicine(Base):
 
     patient = relationship("PatientProfile", back_populates="medicines")
     medicine = relationship("Medicine", back_populates="patient_medicines")
+    prescribed_by = relationship("User", foreign_keys=[prescribed_by_id])

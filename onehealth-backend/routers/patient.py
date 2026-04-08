@@ -152,6 +152,7 @@ def get_my_medicines(
                 "start_date": e.start_date,
                 "notes": e.notes,
                 "added_by": e.added_by,
+                "prescribed_by": e.prescribed_by.name if e.prescribed_by else None,
                 "is_international": e.medicine.is_international,
             }
             for e in entries

@@ -244,6 +244,7 @@ async def prescribe(
     patient_entry = PatientMedicine(
         patient_id=patient_profile.id,
         medicine_id=new_medicine.id,
+        prescribed_by_id=current_user.id,
         dosage=req.dosage,
         frequency=req.frequency,
         notes=req.notes,
